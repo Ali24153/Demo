@@ -5,7 +5,8 @@ package adaLink;
 public class Class_Method_ChildClass {
 
     public static void main(String[] args) {
-        Class_Method_ChildClass.computer();
+
+
         Class_Method_ChildClass obj= new Class_Method_ChildClass(23,65);
         Unite obj1= new Unite();
         Unite.meth();
