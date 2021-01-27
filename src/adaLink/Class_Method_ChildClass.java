@@ -2,11 +2,11 @@ package adaLink;
 
 
 
-public class Trial {
+public class Class_Method_ChildClass {
 
     public static void main(String[] args) {
-        Trial.computer();
-        Trial obj= new Trial(23,65);
+        Class_Method_ChildClass.computer();
+        Class_Method_ChildClass obj= new Class_Method_ChildClass(23,65);
         Unite obj1= new Unite();
         Unite.meth();
           Unite.Mobile obj2= new Unite.Mobile();
@@ -26,7 +26,7 @@ public class Trial {
             System.out.println(total);
     }
 
-    public Trial(int number1, int number2){
+    public Class_Method_ChildClass(int number1, int number2){
 
      System.out.println("total is "+(number1*number2));
 
