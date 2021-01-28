@@ -1,14 +1,14 @@
 package controlFlow;
 
 public class LearnForLoop {
-
+//i=i+2 loop increase by 2
 
     public static void main(String[]args){
 
         int i;
         int j;
         int space=7;
-        for( i=1 ; i<=5; i++){
+        for( i= 1; i<=5; i++){
 
             for(j=1; j<space; j++)
                 System.out.print(" ");
