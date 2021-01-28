@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Quiz3 {
     public static void main(String[] args) {
+   Quiz3.days();
+
+    }
+
+    public static void days(){
         Scanner input= new Scanner(System.in);
 
         System.out.println("Enter Your Number Please:");
@@ -32,13 +37,14 @@ public class Quiz3 {
                 weekday="Sunday";
                 break;
             default:
-              weekday="";
-             break;
+                weekday="";
+                break;
         }
         if (dayNumber>=1 && dayNumber<=7){
             System.out.println("You Have Chosen: "+weekday);
         }else{
             System.out.println("you are out Of Range!");
         }
+
     }
 }
