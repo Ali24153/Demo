@@ -9,7 +9,6 @@ public class LearnIfElseIF {
         obj.yourGrade();
 
     }
-
 public void yourGrade(){
     Scanner input = new Scanner(System.in);
     System.out.println("Please enter you score");
