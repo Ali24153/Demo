@@ -22,7 +22,12 @@ public void yourGrade(){
     } else if (grade == 100) {
         System.out.println("You are a genius");
     } else if (grade < 95 && grade >= 90) {
-        System.out.println("You got an A-");
+        System.out.println("You get an A");
+        if(grade== 94){
+           System.out.println("Keep Working this way");
+        }
+
+
     } else if (grade < 90 && grade >= 87) {
         System.out.println("You got an B+");
     } else if (grade < 87 && grade >= 82) {
