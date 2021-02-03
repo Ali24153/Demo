@@ -1,5 +1,5 @@
 package construction;
-
+// to create constructor faster right click Generate and select constructor.
 public class LearnConstruction {
  String stName;
  int stID;
