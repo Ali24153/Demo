@@ -1,0 +1,9 @@
+To do the Abstraction we have to do 2 things
+ 1-Interface: In interface you can not instantiate (call)
+ a  variable and create object & you can only use public as modifier &
+ to access an interface it must be implement with a class
+ an interface is prototype
+ interface is guideline for future/
+ proto type is a design for your references so that the development team can follow this to develop a complete product
+
+ 2- Abstract Class
