@@ -10,7 +10,7 @@ public abstract class ModernCar {
     String modernCarBrand="BMW";
     double carPrice;
     // abstract method use abstract key word no need of body
-    public abstract void cameras();
+    public abstract void cameras() ;
     public abstract void autoLaneControl();
     public abstract void selfDriven();
     public abstract void gps();
@@ -20,7 +20,7 @@ public abstract class ModernCar {
         System.out.println("Modern Car Has a Remote Start Features");
     }
 
-    public static void dualClimateControl(){
+    public void dualClimateControl(){
 
         System.out.println("Modern Car Has Climate Control Features");
     }

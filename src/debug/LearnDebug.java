@@ -1,5 +1,7 @@
 package debug;
 
+import adaLink.Practice;
+
 import java.util.Scanner;
 
 public class LearnDebug {
@@ -7,6 +9,7 @@ public class LearnDebug {
     //breakpoint
     //  to do the debugging after you select the break point right click ang click on debug.
     public static void main(String[] args) {
+
         LearnDebug.pattern();
         //int num1=34;
         //int num2=54;

@@ -3,8 +3,14 @@ package oOP.abstraction;
 public class Tasla extends RacingCar implements Car,AutoPilot{
    // a class cam implements a multiple interface but extends one class a time
     //Tesla own Variables
+
+ public static void main(String[] args) {
+  Tasla tesla=new Tasla();
+  System.out.println(tesla.modernCarBrand);
+ }
     String carModel ="T45";
     double teslaPrice=75000;
+
 
     // Tesla  own methode
     public void teslaInfo(){

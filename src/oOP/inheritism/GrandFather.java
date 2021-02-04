@@ -1,7 +1,9 @@
 package oOP.inheritism;
 
 public class GrandFather {
-
+// single
+    //multiple
+    // multi level
 
     public String grandFatherFavouriteDish="Burger";
     public String grandFatherFavouriteSport="Soccer";
