@@ -12,6 +12,8 @@ int div;
         try{obj.divs(14,0);}
         catch (Exception e ){
             System.out.println(" Error!! Arithmetic Exception");
+
+
         }
 
 
