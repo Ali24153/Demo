@@ -1,5 +1,7 @@
 package exceptionHandling;
 
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import java.util.concurrent.Callable;
 
 // is used when we expected an error.
@@ -9,13 +11,11 @@ int div;
     public static void main(String[] args) throws Exception {
         Calculator obj=new Calculator();
         Calculator.calcs(65,0);
-        try{obj.divs(14,0);}
-        catch (Exception e ){
-            System.out.println(" Error!! Arithmetic Exception");
-
+        try {
+            obj.divs(14, 0);
+        } finally {
 
         }
-
 
        //obj.divs(958,0); // this will ask to add Exception method After you add throws Exception to the method
 
