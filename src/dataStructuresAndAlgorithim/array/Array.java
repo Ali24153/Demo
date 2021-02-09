@@ -1,10 +1,10 @@
-package dataStructuresAndAlgorithim;
+package dataStructuresAndAlgorithim.array;
 
 public class Array {
 
     //Array can hold multiple value of same datatype
     //DataType[] variableName= new DataType[numberOfVariable]
-    //
+    //[] called dimension
 
     public static void main(String[] args) {
          int[] stid={345, 46757, 5757, 5443};
