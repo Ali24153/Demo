@@ -8,6 +8,9 @@ public class Quiz4_1 {
         obj.rightToVote();
     }
 
+    /**
+     *
+     */
     public void rightToVote(){
         Scanner input=new Scanner(System.in);
         System.out.println("Please enter your age");
@@ -25,6 +28,12 @@ public class Quiz4_1 {
         }
 
     }
+
+    /**
+     *  this method will check if the use is eligible for vote
+     * @param age
+     * author: Ali
+     */
     public int vote(int age) {
 return age;
     }
