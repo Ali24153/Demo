@@ -8,7 +8,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Iterator;
-
 public class ReadExcel {
 
 
@@ -33,6 +32,7 @@ public class ReadExcel {
 
                 }
             }
+            System.out.println();
 
 
 
