@@ -197,7 +197,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$USER_HOME$/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/auxiliary/batik-all-1.13.jar!/" />
