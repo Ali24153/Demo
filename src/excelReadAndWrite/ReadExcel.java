@@ -25,19 +25,22 @@ public class ReadExcel {
                 Cell currentCell= cellIterator.next();
 
                 if( currentCell.getCellType()== CellType.STRING){
-                    System.out.println(currentCell.getStringCellValue()+" ");
+                    System.out.println(currentCell.getStringCellValue()+"/n ");
 
                 }else if(currentCell.getCellType()==CellType.NUMERIC){
                     System.out.println(currentCell.getNumericCellValue()+" ");
 
                 }
-            }
-            System.out.println();
+            }System.out.println();
 
 
 
 
-        }workbook.close();
+
+        }
+
+
+        workbook.close();
         fileInputStream.close();
     }
 }
