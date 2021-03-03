@@ -1,46 +1,52 @@
 package excelReadAndWrite;
 
-import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.streaming.SXSSFRow;
+
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+
 import java.util.Iterator;
+
 public class ReadExcel {
+public static  String excelFile="../Adal/DataTest/DataFile.xlsx";
 
+    // Need to get the Input Byte.
+    public static void main(String[] args) throws Exception{
 
-    public static void main(String[] args) throws IOException {
-        String filepath="../Adal/DataTest/adal_2021.xlsx";
-        FileInputStream fileInputStream= new FileInputStream(filepath);
-        Workbook workbook=new XSSFWorkbook(fileInputStream);
-
-        Sheet firstSheet= workbook.getSheetAt(0);
-        Iterator<Row> rowIterator= firstSheet.iterator();
-        while (rowIterator.hasNext()){
-            Row currentRow = rowIterator.next();
-            Iterator<Cell> cellIterator=currentRow.iterator();
-            while(cellIterator.hasNext()){
-                Cell currentCell= cellIterator.next();
-
-                if( currentCell.getCellType()== CellType.STRING){
-                    System.out.println(currentCell.getStringCellValue()+"/n ");
-
-                }else if(currentCell.getCellType()==CellType.NUMERIC){
-                    System.out.println(currentCell.getNumericCellValue()+" ");
-
-                }
-            }System.out.println();
+        readExcelFile();
+    }
 
 
 
+    public static void  readExcelFile() throws Exception {
+
+        FileInputStream fileInputStream= new FileInputStream(excelFile);
+        XSSFWorkbook workbook= new XSSFWorkbook(fileInputStream);
+        XSSFSheet sheet= workbook.getSheetAt(0);
+  Iterator<Row> rowIterator= sheet.iterator();
+
+     while (rowIterator.hasNext()){
+         Row row= rowIterator.next();
+         Iterator<Cell> cellIterator= row.iterator();
+         while (cellIterator.hasNext()){
+             Cell cell= cellIterator.next();
 
 
-        }
+             if(cell.getCellType()== CellType.STRING){
+                 System.out.print(cell.getStringCellValue()+"  ");
+             }else if(cell.getCellType()==CellType.NUMERIC){
+                 System.out.print(cell.getNumericCellValue()+"  ");
+             }
+         }
+         System.out.println();
+     }
 
-
-        workbook.close();
-        fileInputStream.close();
+     workbook.close();
     }
 }
+

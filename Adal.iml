@@ -230,5 +230,14 @@
     </orderEntry>
     <orderEntry type="library" name="xmlbeans-4.0.0" level="project" />
     <orderEntry type="library" name="commons-compress-1.18" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Extlibrery/poi-5.0.0/mysql-connector-java-8.0.22.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -31,7 +31,7 @@ public class ExcelRead {
                Sheet dataTypeSheet = workbook.getSheetAt(sheetNumber);
                // we need to iterate it will iterate Row which is an interface extends Iterable<Cell>
 
-               Iterator<Row> rowIterator = dataTypeSheet.iterator();
+            Iterator<Row> rowIterator= dataTypeSheet.iterator();
 
                // we need to use while loop it will help us to iterate rows
                while (rowIterator.hasNext()) {
